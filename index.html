@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Learn</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">    
+        <div class="hero-content animate__animated animate__fadeIn">
+            <h1>Hi, I'm <span class="highlight">Nazif Keyan</span></h1>
+            <p>A passionate web developer creating modern and responsive websites.</p>
+            <a href="#portfolio" class="btn">Want to learn?</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="section-title-box">
+            <h2>About Me</h2>
+        </div>
+        <section id="about">
+            <h2></h2>
+            <img src="IMG/WhatsApp Image 2025-02-07 at 10.15.56 AM (1).png" alt="About Me">
+            <div class="about-text">
+                <p>Hello! I'm a professional web developer with over 4 years of experience in building modern, responsive, and user-friendly websites. I specialize in front-end development, UI/UX design, and creating seamless user experiences.</p>
+                <p>My goal is to help businesses and individuals bring their ideas to life through innovative web solutions.</p>
+            </div>
+        </section>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="section-title-box">
+            <h2>My Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <h3>HTML</h3>
+                <div class="skill-percentage">
+                    <div class="percentage-bar" style="width: 90%;"></div>
+                    <span>90%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS</h3>
+                <div class="skill-percentage">
+                    <div class="percentage-bar" style="width: 85%;"></div>
+                    <span>85%</span>
+                </div>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <div class="skill-percentage">
+                    <div class="percentage-bar" style="width: 80%;"></div>
+                    <span>80%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="section-title-box">
+            <h2>How you can learn Web Development by watching the best videos that i have learned by watching</h2>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="IMG/Screenshot 2025-02-23 170402.png" alt="HTML ">
+                <div class="overlay">
+                    <h3></h3>
+                    <p>Learning HTML</p>
+                    <a href="https://www.youtube.com/watch?v=pQN-pnXPaVg"" class="btn">View Video</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="IMG/Screenshot 2025-02-23 170937.png" alt="CSS">
+                <div class="overlay">
+                    <h3></h3>
+                    <p>Learning CSS</p>
+                    <a href="https://www.youtube.com/watch?v=OXGznpKZ_sA" class="btn">View Video</a>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="IMG/Screenshot 2025-02-23 171234.png" alt="JavaScript">
+                <div class="overlay">
+
+                    <h3></h3>
+                    <p>Learning JavaScript</p>
+                    <a href="https://www.youtube.com/watch?v=PkZNo7MFNFg" class="btn">View Video</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="section-title-box">
+            <h2>Testimonials</h2>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-item">
+                <p>"Emtu is an exceptional developer. He delivered my project on time and exceeded my expectations!"</p>
+                <h3>- Client A</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>"Highly professional and creative. I highly recommend Emtu for any web development and python project."</p>
+                <h3>- Client B</h3>
+            </div>
+            <div class="testimonial-item">
+                <p>"Working with Emtu was a pleasure. He understood my vision and brought it to life."</p>
+                <h3>- Client C</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="section-title-box">
+            <h2>Contact Me</h2>
+        </div>
+        <form action="https://formspree.io/f/movjzejo" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/Keyanog" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/nazif-keyan-a4888b34b/"><i class="fab fa-linkedin"></i></a>
+            
+        </div>
+    </footer>
+
+    <script src="lindex.js"></script>
+</body>
+</html>
