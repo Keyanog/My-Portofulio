@@ -6,20 +6,18 @@
 }
 
 body {
-    /* General Styles */
-body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #333;
+    color: #fff; /* Change text color to white */
     line-height: 1.6;
-    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Gradient background */
+    background: #000; /* Change background to black */
     min-height: 100vh;
 }
 
 header {
-    background: rgba(51, 51, 51, 0.8); /* Semi-transparent dark background */
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
     color: #fff;
     padding: 1rem 0;
     position: fixed;
@@ -29,7 +27,7 @@ header {
 }
 
 .hero {
-    background: linear-gradient(135deg, #667eea, #764ba2); /* Gradient for hero section */
+    background: linear-gradient(135deg, #000, #333); /* Gradient for hero section */
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -39,15 +37,12 @@ header {
 }
 
 .about, .skills, .portfolio, .testimonials, .contact {
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
     padding: 4rem 2rem;
     text-align: center;
     border-radius: 10px;
     margin: 2rem auto;
     max-width: 1200px;
-}
-
-/* Rest of your CSS remains the same */
 }
 
 /* Section Titles - Box Styling */
@@ -57,7 +52,7 @@ header {
     font-size: 2rem;
     font-weight: bold;
     color: #fff;
-    background: linear-gradient(135deg, #61edff, #ff4a3d); /* Warm gradient */
+    background: linear-gradient(135deg, #333, #444); /* Dark gradient */
     border-radius: 5px;
     border: 2px solid #fff;
     margin-bottom: 1.5rem;
@@ -66,7 +61,7 @@ header {
 
 /* Header */
 header {
-    background: linear-gradient(135deg, #333, #444);
+    background: linear-gradient(135deg, #000, #111);
     color: #fff;
     padding: 1rem 0;
     position: fixed;
@@ -118,7 +113,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #ff758c, #ff7eb3);
+    background: linear-gradient(135deg, #000, #333);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -127,39 +122,105 @@ nav {
     color: #fff;
 }
 
-.hero-content h1 {
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem; /* Adjust the gap between the image and text */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    object-fit: cover;
+}
+
+.hero-text {
+    text-align: left; /* Align text to the left */
+}
+
+.hero-text h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
 }
 
-.hero-content p {
+.hero-text p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
 
+/* Add these styles to your existing CSS file */
 .btn {
-    background: #ff6f61;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 140px;
+    height: 50px;
+    border-radius: 0.5em;
+    box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
+    overflow: hidden;
+    text-decoration: none; /* Ensure the button looks like a button */
+  }
+  
+  .btn div {
+    transform: translateY(0px);
+    width: 100%;
+  }
+  
+  .btn,
+  .btn div {
+    transition: 0.6s cubic-bezier(.16,1,.3,1);
+  }
+  
+  .btn div span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0.75em 1.125em;
+  }
+  
+  .btn div:nth-child(1) {
+    background-color: #1e90ff;
+  }
+  
+  .btn div:nth-child(2) {
+    background-color: #21dc62;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
+  }
+  
+  .btn:hover div {
+    transform: translateY(-50px);
+  }
+  
+  .btn p {
+    font-size: 18px;
     font-weight: bold;
-    transition: background 0.3s ease;
-}
+    color: #ffffff;
+  }
+  
+  .btn:active {
+    transform: scale(0.95);
+  }
 
 .btn:hover {
-    background: #ff4a3d;
+    background: #444;
 }
 
 /* Sections */
 .about, .skills, .portfolio, .testimonials, .contact {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(230, 230, 230, 0.9));
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(30, 30, 30, 0.9));
     padding: 4rem 2rem;
     text-align: center;
     border-radius: 10px;
     margin: 2rem auto;
     max-width: 1200px;
-    border: 3px solid #ff6f61; /* Adds a box around the sections */
+    border: 3px solid #333; /* Adds a box around the sections */
 }
 
 /* About Section */
@@ -181,7 +242,7 @@ nav {
 
 /* Skills & Portfolio */
 .skills-grid, .portfolio-grid, .testimonials-grid {
-    background: linear-gradient(135deg, #00c6fb, #005bea);
+    background: linear-gradient(135deg, #000, #111);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
@@ -193,7 +254,7 @@ nav {
 /* Skill Percentage */
 .skill-percentage {
     position: relative;
-    background: #fffdfd;
+    background: #030101;
     border-radius: 5px;
     overflow: hidden;
     margin-top: 10px;
@@ -201,7 +262,7 @@ nav {
 }
 
 .percentage-bar {
-    background: #216cdd;
+    background: #a38d8d;
     height: 100%;
     border-radius: 5px 0 0 5px;
 }
@@ -216,16 +277,16 @@ nav {
 }
 
 .skill-item, .portfolio-item, .testimonial-item {
-    background: linear-gradient(135deg, #f4f4f4, #ddd);
+    background: linear-gradient(135deg, #222, #333);
     padding: 1rem;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease, background 0.3s ease;
-    border: 2px solid #ff6f61; /* Adds border to skill & portfolio items */
+    border: 2px solid #444; /* Adds border to skill & portfolio items */
 }
 
 .skill-item:hover, .portfolio-item:hover, .testimonial-item:hover {
-    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    background: linear-gradient(135deg, #444, #555);
     transform: translateY(-10px);
     color: #fff;
 }
@@ -274,15 +335,16 @@ nav {
 }
 
 .contact form input, .contact form textarea {
-    background: linear-gradient(135deg, #fff, #f1f1f1);
-    border: 2px solid #ff6f61; /* Adds border */
+    background: linear-gradient(135deg, #333, #444);
+    border: 2px solid #555; /* Adds border */
     padding: 0.75rem;
     border-radius: 5px;
     margin-bottom: 1rem;
+    color: #fff;
 }
 
 .contact form button {
-    background: #ff6f61;
+    background: #444;
     color: #fff;
     padding: 0.75rem;
     border: none;
@@ -293,16 +355,16 @@ nav {
 }
 
 .contact form button:hover {
-    background: #ff4a3d;
+    background: #555;
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(135deg, #333, #222);
+    background: linear-gradient(135deg, #000, #111);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    border-top: 3px solid #ff6f61;
+    border-top: 3px solid #333;
 }
 
 .social-links {
@@ -320,7 +382,7 @@ footer {
     .nav-links {
         display: none;
         flex-direction: column;
-        background: #333;
+        background: #000;
         position: absolute;
         top: 60px;
         left: 0;
@@ -342,3 +404,75 @@ footer {
     }
 }
 
+/* Animation */
+@keyframes slowSpawn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slow-spawn {
+    animation: slowSpawn 1s ease-out;
+}
+
+/* Button Animation */
+.button {
+    display: flex;
+}
+
+.box {
+    width: 35px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    transition: all .8s;
+    cursor: pointer;
+    position: relative;
+    background: rgb(58, 165, 253);
+    overflow: hidden;
+}
+
+.box:before {
+    content: "W";
+    position: absolute;
+    top: 0;
+    background: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform .4s;
+}
+
+.box:nth-child(2)::before {
+    transform: translateY(-100%);
+    content: 'O';
+}
+
+.box:nth-child(3)::before {
+    content: 'R';
+}
+
+.box:nth-child(4)::before {
+    transform: translateY(-100%);
+    content: 'L';
+}
+
+.box:nth-child(5)::before {
+    content: 'D';
+}
+
+.button:hover .box:before {
+    transform: translateY(0);
+}
