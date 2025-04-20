@@ -112,18 +112,16 @@ nav {
 
 
 .portfolio-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  height: 220px; /* Limit the height of each item */
+  border-radius: 10px;
 }
 
 .portfolio-item img {
-  width: 100px; /* Smaller size */
-  height: 100px;
-  object-fit: contain; /* Keep aspect ratio */
-  transition: transform 0.3s ease;
-  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 
